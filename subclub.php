@@ -7,6 +7,7 @@
  * Version:     1.0
  * Author:      TheBLVD
  * Author URI:  https://theblvd.carrd.co/
+ * License:     GPL2
  */
 
 
