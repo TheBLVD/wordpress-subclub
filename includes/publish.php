@@ -96,7 +96,7 @@ class Publish
                         // Update post body with the excerpt
                         wp_update_post(array(
                             'ID' => $post_id,
-                            'post_content' => sanitize_text_field($excerpt),
+                            'post_content' => $excerpt,
                         ));
 
                         // update the post composer content with the content of $excerpt. Use jquery to do this.
