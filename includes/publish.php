@@ -27,6 +27,9 @@ class Publish
     {
         wp_nonce_field('subclub_save_meta_box_data', 'subclub_meta_box_nonce');
         $value = get_post_meta($post->ID, '_subclub_post_type', true);
+        if (empty($value)) {
+            $value = 'premium';
+        }
 ?>
         <p>
             <label for="subclub_post_type">Post Type:</label>
