@@ -7,8 +7,6 @@
 	<exclude-pattern>*\.(inc|css|js|svg)</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
 	<exclude-pattern>*/node_modules/*</exclude-pattern>
-	<exclude-pattern>*/assets/*</exclude-pattern>
-	<exclude-pattern>*/README.md</exclude-pattern>
 	<exclude-pattern>*.asset.php</exclude-pattern>
 
 	<arg value="ps"/>
