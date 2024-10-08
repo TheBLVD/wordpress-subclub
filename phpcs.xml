@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress SubClub">
+	<description>WordPress SubClub Standards</description>
+	<file>./subclub.php</file>
+	<file>./includes/</file>
+
+	<exclude-pattern>*\.(inc|css|js|svg)</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+	<exclude-pattern>*.asset.php</exclude-pattern>
+
+	<arg value="ps"/>
+	<arg name="basepath" value="."/><!-- Strip the file paths down to the relevant bit -->
+	<arg name="colors"/>
+	<arg name="parallel" value="50"/>
+
+	<rule ref="PHPCompatibility"/>
+	<config name="testVersion" value="7.0-"/>
+	<rule ref="PHPCompatibilityWP"/>
+	<config name="minimum_supported_wp_version" value="4.7"/>
+
+	<config name="text_domain" value="subclub,default"/>
+
+	<rule ref="WordPress"/>
+	<rule ref="VariableAnalysis"/>
+
+	<rule ref="WordPress.WP.Capabilities">
+		<properties>
+			<property name="custom_capabilities" type="array">
+				<element value="subclub" />
+			</property>
+		</properties>
+	</rule>
+</ruleset>
