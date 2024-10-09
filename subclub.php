@@ -3,7 +3,7 @@
 /**
  * Plugin Name: sub.club
  * Plugin URI:  http://sub.club
- * Description: A plugin for interacting with sub.club.
+ * Description: Turn your free blog into a premium blog using sub.club.
  * Version:     1.0
  * Author:      TheBLVD
  * Author URI:  https://theblvd.carrd.co/
