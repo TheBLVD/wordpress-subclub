@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="WordPress SubClub">
-	<description>WordPress SubClub Standards</description>
+<ruleset name="WordPress sub.club">
+	<description>WordPress sub.club Standards</description>
 	<file>./subclub.php</file>
 	<file>./includes/</file>
 

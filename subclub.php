@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: SubClub
+ * Plugin Name: sub.club
  * Plugin URI:  http://sub.club
  * Description: A plugin for interacting with sub.club.
  * Version:     1.0

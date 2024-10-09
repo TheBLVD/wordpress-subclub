@@ -20,6 +20,7 @@ rm -rf "$DEST_PATH/subclub/export"
 rm -f "$DEST_PATH/subclub/.gitignore"
 rm -f "$DEST_PATH/subclub/.DS_Store"
 rm -f "$DEST_PATH/subclub/export.sh"
+rm -rf "$DEST_PATH/subclub/assets"
 
 # Create a zip file of the copied folder
 (cd "$DEST_PATH" && zip -r "../$ZIP_FILE" "subclub")

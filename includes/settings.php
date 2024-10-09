@@ -10,14 +10,14 @@ class Settings {
 	}
 
 	static function subclub_settings_init() {
-		add_options_page( 'SubClub Settings', '', 'manage_options', 'subclub', array( __CLASS__, 'subclub_options_page' ) );
+		add_options_page( 'sub.club Settings', '', 'manage_options', 'subclub', array( __CLASS__, 'subclub_options_page' ) );
 		add_settings_section( 'subclub_settings_section', 'API Key', array( __CLASS__, 'subclub_settings_section_callback' ), 'subclub' );
 		add_settings_field( 'subclub_api_key', 'API Key', array( __CLASS__, 'subclub_api_key_render' ), 'subclub', 'subclub_settings_section' );
 		register_setting( 'subclub_settings', 'subclub_api_key' );
 	}
 
 	static function subclub_settings_section_callback() {
-		echo '<p>Enter your SubClub API key below:</p>';
+		echo '<p>Enter your sub.club API key below:</p>';
 	}
 
 	static function subclub_api_key_render() {
@@ -41,7 +41,7 @@ class Settings {
 	static function subclub_options_page() {
 		?>
 		<form action='options.php' method='post'>
-			<h2>SubClub Settings</h2>
+			<h2>sub.club Settings</h2>
 			<?php
 			settings_fields( 'subclub_settings' );
 			do_settings_sections( 'subclub' );
@@ -52,6 +52,6 @@ class Settings {
 	}
 
 	static function subclub_settings_menu() {
-		add_options_page( 'SubClub Settings', 'SubClub', 'manage_options', 'subclub', array( __CLASS__, 'subclub_options_page' ) );
+		add_options_page( 'sub.club Settings', 'sub.club', 'manage_options', 'subclub', array( __CLASS__, 'subclub_options_page' ) );
 	}
 }

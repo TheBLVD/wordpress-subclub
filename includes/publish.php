@@ -32,7 +32,7 @@ class Publish {
 		$delete_option_value = get_post_meta( $post->ID, '_subclub_delete_premium', true );
 		?>
 		<p>
-			<label for="subclub_post_type">Post type:</label>
+			<label for="subclub_post_type">Post type</label>
 			<select name="subclub_post_type" id="subclub_post_type">
 				<option value="free" <?php selected( $post_type_value, 'free' ); ?>>Free</option>
 				<option value="premium" <?php selected( $post_type_value, 'premium' ); ?>>Premium</option>
