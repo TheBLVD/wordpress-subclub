@@ -39,10 +39,10 @@ class Publish {
 			</select>
 		</p>
 		<p>
-			<label for="subclub_delete_premium_option"><?php esc_html_e( 'On delete', 'subclub' ); ?></label>
+			<label for="subclub_delete_premium_option"><?php esc_html_e( 'On delete', 'sub-club' ); ?></label>
 			<select name="subclub_delete_premium_option" id="subclub_delete_premium_option">
-				<option value="delete" <?php selected( $delete_option_value, 'delete' ); ?>><?php esc_html_e( 'Delete premium', 'subclub' ); ?></option>
-				<option value="keep" <?php selected( $delete_option_value, 'keep' ); ?>><?php esc_html_e( 'Keep premium', 'subclub' ); ?></option>
+				<option value="delete" <?php selected( $delete_option_value, 'delete' ); ?>><?php esc_html_e( 'Delete premium', 'sub-club' ); ?></option>
+				<option value="keep" <?php selected( $delete_option_value, 'keep' ); ?>><?php esc_html_e( 'Keep premium', 'sub-club' ); ?></option>
 			</select>
 		</p>
 		<?php
