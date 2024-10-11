@@ -1,6 +1,6 @@
 <?php
 
-namespace Subclub;
+namespace SubDotClub;
 
 use Exception;
 

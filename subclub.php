@@ -11,7 +11,7 @@
  */
 
 
-namespace Subclub;
+namespace SubDotClub;
 
 // Include the Admin class file
 require_once plugin_dir_path( __FILE__ ) . 'includes/settings.php';
