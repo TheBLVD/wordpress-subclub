@@ -142,14 +142,12 @@ class Publish {
 							)
 						);
 
-						// update the post composer content with the content of $excerpt. Use jquery to do this.
-						?>
-						<script>
-							jQuery(document).ready(function($) {
-								$('#content').val('<?php echo esc_js( $excerpt ); ?>');
-							});
-						</script>
-						<?php
+						// Add inline script to update the post composer content
+						$inline_script = sprintf(
+							"jQuery(document).ready(function($) { $('#content').val('%s'); });",
+							esc_js( $excerpt )
+						);
+						wp_add_inline_script( 'subclub-admin-script', $inline_script );
 					}
 				} catch ( Exception $e ) {
 					// Handle any errors (e.g., log them or notify the admin)
