@@ -2,7 +2,7 @@
 
 # Define the source and destination paths
 SOURCE_PATH="../subclub"
-DEST_PATH=".tmp"
+DEST_PATH="./.tmp"
 ZIP_DIR="export"
 ZIP_FILE="$ZIP_DIR/subclub.zip"
 
@@ -14,14 +14,21 @@ mkdir -p "$ZIP_DIR"
 cp -r "$SOURCE_PATH" "$DEST_PATH"
 
 # Remove the .git folder, .gitignore file, and .DS_Store file from the copied folder
-rm -rf "$DEST_PATH/subclub/.git"
-rm -rf "$DEST_PATH/subclub/.tmp"
-rm -rf "$DEST_PATH/subclub/export"
-rm -f "$DEST_PATH/subclub/.gitignore"
-rm -f "$DEST_PATH/subclub/.DS_Store"
-rm -f "$DEST_PATH/subclub/export.sh"
-rm -rf "$DEST_PATH/subclub/assets"
+rm -rf $DEST_PATH/subclub/.git
+rm -rf $DEST_PATH/subclub/.??*
+rm -rf $DEST_PATH/subclub/export
+rm -rf $DEST_PATH/subclub/vendor
+rm -rf $DEST_PATH/subclub/assets
+rm -f $DEST_PATH/subclub/.gitignore
+rm -f $DEST_PATH/subclub/.DS_Store
+rm -f $DEST_PATH/subclub/README.md
+rm -f $DEST_PATH/subclub/composer.json
+rm -f $DEST_PATH/subclub/composer.lock
+rm -f $DEST_PATH/subclub/phpcs.xml
+rm -f $DEST_PATH/subclub/LICENSE
+rm -f $DEST_PATH/subclub/export.sh
 
+rm -f $ZIP_FILE
 # Create a zip file of the copied folder
 (cd "$DEST_PATH" && zip -r "../$ZIP_FILE" "subclub")
 
