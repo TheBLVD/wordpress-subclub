@@ -14,6 +14,22 @@ Turn your free blog into a premium blog using sub.club.
 
 A plugin that lets you earn money by turning your free blog into a premium blog using sub.club, the new, decentralized creator payments platform. Your premium blog posts will be on the Fediverse (aka ActivityPub), and your readers will be able to view them in Mastodon and Fediverse apps such as Ivory, Ice Cubes, Mammoth and many more. And of course readers can also just read premium posts on the web, using any web browser.
 
+- **Service Website:** https://sub.club/
+- **Terms of Use:** https://melted-april-eb6.notion.site/Sub-club-Terms-of-Service-d468a66d0bb8442880b025d98e6a1549
+- **Privacy Policy:** https://melted-april-eb6.notion.site/Sub-club-Privacy-Policy-ffeaae585c5244b79f1afd5b9684a4f2
+
+== Other Notes ==
+
+**Data Transmission**
+
+When using this plugin, data is transmitted to https://api.sub.club when creating or editing posts.
+
+Please ensure that you review sub.club's terms of use and privacy policy to understand how your data is handled and any legal implications.
+
+**Legal Disclaimer**
+
+By using this plugin, you agree to the terms and conditions of the third-party service. It is your responsibility to ensure compliance with any applicable laws and regulations regarding data transmission and privacy.
+
 == Frequently Asked Questions ==
 
 = Does this plugin require any configuration? =
