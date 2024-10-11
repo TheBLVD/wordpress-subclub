@@ -49,7 +49,6 @@ class Settings {
 			return;
 		}
 
-		wp_register_script( 'subdotclub-admin-script', plugins_url( 'js/subdotclub-admin.js', __FILE__ ), array( 'jquery' ), null, true );
 		wp_enqueue_script( 'subdotclub-admin-script' );
 
 		$inline_script = "
