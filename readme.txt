@@ -14,9 +14,10 @@ Turn your free blog into a premium blog using sub.club.
 
 A plugin that lets you earn money by turning your free blog into a premium blog using sub.club, the new, decentralized creator payments platform. Your premium blog posts will be on the Fediverse (aka ActivityPub), and your readers will be able to view them in Mastodon and Fediverse apps such as Ivory, Ice Cubes, Mammoth and many more. And of course readers can also just read premium posts on the web, using any web browser.
 
-- **Service Website:** https://sub.club/
+- **Service Website:** https://sub.club
 - **Terms of Use:** https://melted-april-eb6.notion.site/Sub-club-Terms-of-Service-d468a66d0bb8442880b025d98e6a1549
 - **Privacy Policy:** https://melted-april-eb6.notion.site/Sub-club-Privacy-Policy-ffeaae585c5244b79f1afd5b9684a4f2
+
 
 == Other Notes ==
 
@@ -41,7 +42,7 @@ Yes, once you have installed and activated the sub.club plugin, you need to set 
    - Enter your sub.club API key in the provided field and save the changes.
 
 = How do I create a premium post? =
-
+ 
    - When composing a new post in WordPress, you will see a `sub.club` meta box on the right-hand side of the editor.
    - In the `sub.club` meta box, you can choose to make the post a Premium post by selecting the appropriate option.
    - By doing this, a premium post will be created on sub.club, and the WordPress post will include a link to the premium post on sub.club.
