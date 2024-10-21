@@ -31,15 +31,52 @@ Please ensure that you review sub.club's terms of use and privacy policy to unde
 
 By using this plugin, you agree to the terms and conditions of the third-party service. It is your responsibility to ensure compliance with any applicable laws and regulations regarding data transmission and privacy.
 
+== Installation ==
+
+= From your WordPress dashboard =
+
+1. Navigate to `Plugins` -> `Add New`.
+2. In the search field, type `sub.club` and click `Search Plugins`.
+3. Once you have found the plugin, click `Install Now`.
+4. After the plugin is installed, click `Activate`.
+5. Go to https://sub.club/login and set up your creator account. Make sure to configure Stripe!
+6. Navigate to the Settings section in your WordPress admin dashboard.
+7. Click on the sub.club settings section.
+8. Enter your sub.club API key in the provided field and save the changes.
+
+= From WordPress.org =
+
+1. Download the `sub.club` plugin from the WordPress.org plugin repository.
+2. Navigate to `Plugins` -> `Add New` in your WordPress dashboard.
+3. Click `Upload Plugin` and choose the downloaded zip file.
+4. Click `Install Now` and then `Activate`.
+5. Go to https://sub.club/login and set up your creator account. Make sure to configure Stripe!
+6. Navigate to the Settings section in your WordPress admin dashboard.
+7. Click on the sub.club settings section.
+8. Enter your sub.club API key in the provided field and save the changes.
+
+= Manual Installation =
+
+1. Download the `sub.club` plugin from the WordPress.org plugin repository.
+2. Unzip the downloaded file.
+3. Upload the `subclub` directory to the `/wp-content/plugins/` directory on your web server.
+4. Navigate to `Plugins` in your WordPress dashboard and activate the `sub.club` plugin.
+5. Go to https://sub.club/login and set up your creator account. Make sure to configure Stripe!
+6. Navigate to the Settings section in your WordPress admin dashboard.
+7. Click on the sub.club settings section.
+8. Enter your sub.club API key in the provided field and save the changes.
+
+
 == Frequently Asked Questions ==
 
 = Does this plugin require any configuration? =
 
-Yes, once you have installed and activated the sub.club plugin, you need to set your sub.club API key:
-
-   - Navigate to the `Settings` section in your WordPress admin dashboard.
-   - Click on the `sub.club` settings section.
-   - Enter your sub.club API key in the provided field and save the changes.
+Yes. To use sub.club with WordPress, please follow these steps:
+1. Install the sub.club WordPress plugin
+2. Go to https://sub.club/login and set up your creator account. Make sure to configure Stripe!
+3. Navigate to the Settings section in your WordPress admin dashboard.
+4. Click on the sub.club settings section.
+5. Enter your sub.club API key in the provided field and save the changes.
 
 = How do I create a premium post? =
  
