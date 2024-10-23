@@ -88,6 +88,11 @@ Yes. To use sub.club with WordPress, please follow these steps:
 
 By following these steps, you can easily create and manage premium content on sub.club directly from your WordPress site.
 
+= Can I edit a premium post? =
+
+We currently do not support editing of premium posts using this plugin. You can edit the except in your Wordpress post, but can not edit the premium content hosted on sub.club.
+We recommend to delete your Wordpress post and create a new premium post instead. We're expecting to release more features to this plugin soon.
+
 == Changelog ==
 
 = 1.0.0 =
