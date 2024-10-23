@@ -87,6 +87,11 @@ class Publish {
 		$delete_option = sanitize_text_field( wp_unslash( $_POST['subdotclub_delete_premium_option'] ) );
 		update_post_meta( $post_id, '_subdotclub_delete_premium', $delete_option );
 
+		// Only execute the plugin logic when the post is being published for the first time
+		if ( get_post_status( $post_id ) != 'publish' || get_post_meta( $post_id, '_subdotclub_post_published', true ) ) {
+			return;
+		}
+
 		if ( $post_type == 'premium' ) {
 			$title        = get_the_title( $post_id );
 			$post         = get_post( $post_id );
@@ -123,6 +128,7 @@ class Publish {
 						// Store the URL in post meta
 						update_post_meta( $post_id, '_subdotclub_post_url', $response['url'] );
 						update_post_meta( $post_id, '_subdotclub_post_id', $response['postId'] );
+						update_post_meta( $post_id, '_subdotclub_post_published', true );
 
 						// Concat the excerpt with the subdotclub post URL
 						$excerpt = $excerpt . '<br /><br />RE: <a href="' . $response['url'] . '" target="_blank">' . $response['url'] . '</a>';
