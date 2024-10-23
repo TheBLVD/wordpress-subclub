@@ -8,6 +8,7 @@ class Settings {
 		add_action( 'admin_menu', array( __CLASS__, 'subdotclub_settings_menu' ) );
 		add_action( 'admin_init', array( __CLASS__, 'subdotclub_settings_init' ) );
 		add_action( 'admin_enqueue_scripts', array( __CLASS__, 'subdotclub_enqueue_admin_scripts' ) );
+		add_filter( 'plugin_action_links_' . plugin_basename( plugin_dir_path( __DIR__ ) . 'subclub.php' ), array( __CLASS__, 'subdotclub_add_settings_link' ) );
 	}
 
 	static function subdotclub_settings_init() {
@@ -68,5 +69,11 @@ class Settings {
 			});
 		";
 		wp_add_inline_script( 'subdotclub-admin-script', $inline_script );
+	}
+
+	static function subdotclub_add_settings_link( $links ) {
+		$settings_link = '<a href="options-general.php?page=subdotclub">' . __( 'Settings', 'sub-club' ) . '</a>';
+		array_unshift( $links, $settings_link );
+		return $links;
 	}
 }
