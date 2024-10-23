@@ -23,8 +23,9 @@ class Settings {
 
 	static function subdotclub_api_key_render() {
 		$options = get_option( 'subdotclub_api_key' );
-		echo "<input type='password' name='subdotclub_api_key' id='subdotclub_api_key' value='" . esc_attr( $options ) . "' />";
-		echo "<button type='button' id='toggle_api_key'>Show</button>";
+		echo "<input type='password' name='subdotclub_api_key' id='subdotclub_api_key' value='" . esc_attr( $options ) . "' aria-describedby='toggle_api_key_description' />";
+		echo "<button type='button' id='toggle_api_key' aria-describedby='toggle_api_key_description'>Show</button>";
+		echo "<p id='toggle_api_key_description' class='screen-reader-text'>Toggle visibility of the API key</p>";
 	}
 
 	static function subdotclub_options_page() {

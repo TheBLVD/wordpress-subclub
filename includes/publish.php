@@ -32,18 +32,20 @@ class Publish {
 		$delete_option_value = get_post_meta( $post->ID, '_subdotclub_delete_premium', true );
 		?>
 		<p>
-			<label for="subdotclub_post_type">Post type</label>
-			<select name="subdotclub_post_type" id="subdotclub_post_type">
-				<option value="free" <?php selected( $post_type_value, 'free' ); ?>>Free</option>
-				<option value="premium" <?php selected( $post_type_value, 'premium' ); ?>>Premium</option>
+			<label for="subdotclub_post_type"><?php esc_html_e( 'Post type', 'sub-club' ); ?></label>
+			<select name="subdotclub_post_type" id="subdotclub_post_type" aria-describedby="subdotclub_post_type_description">
+				<option value="free" <?php selected( $post_type_value, 'free' ); ?>><?php esc_html_e( 'Free', 'sub-club' ); ?></option>
+				<option value="premium" <?php selected( $post_type_value, 'premium' ); ?>><?php esc_html_e( 'Premium', 'sub-club' ); ?></option>
 			</select>
+			<span id="subdotclub_post_type_description" class="screen-reader-text"><?php esc_html_e( 'Select the type of post: Free or Premium.', 'sub-club' ); ?></span>
 		</p>
 		<p>
 			<label for="subdotclub_delete_premium_option"><?php esc_html_e( 'On delete', 'sub-club' ); ?></label>
-			<select name="subdotclub_delete_premium_option" id="subdotclub_delete_premium_option">
+			<select name="subdotclub_delete_premium_option" id="subdotclub_delete_premium_option" aria-describedby="subdotclub_delete_premium_option_description">
 				<option value="delete" <?php selected( $delete_option_value, 'delete' ); ?>><?php esc_html_e( 'Delete premium', 'sub-club' ); ?></option>
 				<option value="keep" <?php selected( $delete_option_value, 'keep' ); ?>><?php esc_html_e( 'Keep premium', 'sub-club' ); ?></option>
 			</select>
+			<span id="subdotclub_delete_premium_option_description" class="screen-reader-text"><?php esc_html_e( 'Choose whether to delete or keep the premium post when the WordPress post is deleted.', 'sub-club' ); ?></span>
 		</p>
 		<?php
 	}
