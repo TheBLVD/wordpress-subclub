@@ -9,29 +9,44 @@ A Wordpress plugin for interacting with [sub.club](https://sub.club).
 
 ## Installation
 
-To install the sub.club plugin into your WordPress site, follow these steps:
+### From your WordPress dashboard
 
-1. **Download the Plugin:**
+1. Navigate to `Plugins` -> `Add New`.
+2. In the search field, type `sub.club` and click `Search Plugins`.
+3. Once you have found the plugin, click `Install Now`.
+4. After the plugin is installed, click `Activate`.
+5. Go to [https://sub.club/login](https://sub.club/login) and set up your creator account. Make sure to configure Stripe!
+6. Navigate to the Settings section in your WordPress admin dashboard.
+7. Click on the sub.club settings section.
+8. Enter your sub.club API key in the provided field and save the changes.
 
-   - Locate the `subclub.zip` file inside the `export` folder.
+### From WordPress.org
 
-2. **Upload the Plugin:**
+1. Download the `sub.club` plugin from the WordPress.org plugin repository.
+2. Navigate to `Plugins` -> `Add New` in your WordPress dashboard.
+3. Click `Upload Plugin` and choose the downloaded zip file.
+4. Click `Install Now` and then `Activate`.
+5. Go to [https://sub.club/login](https://sub.club/login) and set up your creator account. Make sure to configure Stripe!
+6. Navigate to the Settings section in your WordPress admin dashboard.
+7. Click on the sub.club settings section.
+8. Enter your sub.club API key in the provided field and save the changes.
 
-   - Log in to your WordPress admin dashboard.
-   - Navigate to `Plugins` > `Add New`.
-   - Click on the `Upload Plugin` button at the top of the page.
-   - Choose the `subclub.zip` file you downloaded and click `Install Now`.
+### Manual Installation
 
-3. **Activate the Plugin:**
-   - Once the plugin is installed, click the `Activate Plugin` button.
-
-Your sub.club plugin is now installed and activated. You can start using it to interact with [sub.club](https://sub.club).
+1. Download the `sub.club` plugin from the WordPress.org plugin repository.
+2. Unzip the downloaded file.
+3. Upload the `subclub` directory to the `/wp-content/plugins/` directory on your web server.
+4. Navigate to `Plugins` in your WordPress dashboard and activate the `sub.club` plugin.
+5. Go to [https://sub.club/login](https://sub.club/login) and set up your creator account. Make sure to configure Stripe!
+6. Navigate to the Settings section in your WordPress admin dashboard.
+7. Click on the sub.club settings section.
+8. Enter your sub.club API key in the provided field and save the changes.
 
 ## Usage
 
 Once you have installed and activated the sub.club plugin, follow these steps to use it:
 
-1. **Set Your sub.club API Key:**
+1. **Make sure you set your sub.club API Key:**
 
    - Navigate to the `Settings` section in your WordPress admin dashboard.
    - Click on the `sub.club` settings section.
