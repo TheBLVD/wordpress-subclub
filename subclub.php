@@ -4,7 +4,7 @@
  * Plugin Name: sub.club
  * Plugin URI:  https://github.com/theblvd/wordpress-subclub/
  * Description: Turn your free blog into a premium blog using sub.club.
- * Version:     1.0
+ * Version:     1.1
  * Author:      TheBLVD
  * Author URI:  https://theblvd.carrd.co/
  * License:     GPL2
