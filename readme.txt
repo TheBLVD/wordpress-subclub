@@ -95,5 +95,8 @@ We recommend to delete your Wordpress post and create a new premium post instead
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.1 =
+* Bug fixes and a11y improvements
+
+= 1.0 =
 * Initial release.
