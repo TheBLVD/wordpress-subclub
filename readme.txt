@@ -90,8 +90,9 @@ By following these steps, you can easily create and manage premium content on su
 
 = Can I edit a premium post? =
 
-We currently do not support editing of premium posts using this plugin. You can edit the except in your Wordpress post, but can not edit the premium content hosted on sub.club.
-We recommend to delete your Wordpress post and create a new premium post instead. We're expecting to release more features to this plugin soon.
+You can edit the except in your Wordpress post, but can not edit the premium content hosted on sub.club.
+We currently do not support editing of premium posts using this plugin. We recommend to delete your Wordpress post and create a new premium post instead.
+By default, we'll delete your sub.club post when you delete the related Wordpress post.
 
 == Changelog ==
 
