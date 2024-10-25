@@ -27,13 +27,14 @@ class Publish {
 		wp_nonce_field( 'subdotclub_save_meta_box_data', 'subdotclub_meta_box_nonce' );
 		$post_type_value = get_post_meta( $post->ID, '_subdotclub_post_type', true );
 		if ( empty( $post_type_value ) ) {
-			$post_type_value = 'premium';
+			$post_type_value = 'free';
 		}
 		$delete_option_value = get_post_meta( $post->ID, '_subdotclub_delete_premium', true );
+		$is_editing = $post->post_status != 'auto-draft';
 		?>
 		<p>
 			<label for="subdotclub_post_type"><?php esc_html_e( 'Post type', 'sub-club' ); ?></label>
-			<select name="subdotclub_post_type" id="subdotclub_post_type" aria-describedby="subdotclub_post_type_description">
+			<select name="subdotclub_post_type" id="subdotclub_post_type" aria-describedby="subdotclub_post_type_description" <?php disabled( $is_editing ); ?>>
 				<option value="free" <?php selected( $post_type_value, 'free' ); ?>><?php esc_html_e( 'Free', 'sub-club' ); ?></option>
 				<option value="premium" <?php selected( $post_type_value, 'premium' ); ?>><?php esc_html_e( 'Premium', 'sub-club' ); ?></option>
 			</select>
@@ -41,7 +42,7 @@ class Publish {
 		</p>
 		<p>
 			<label for="subdotclub_delete_premium_option"><?php esc_html_e( 'On delete', 'sub-club' ); ?></label>
-			<select name="subdotclub_delete_premium_option" id="subdotclub_delete_premium_option" aria-describedby="subdotclub_delete_premium_option_description">
+			<select name="subdotclub_delete_premium_option" id="subdotclub_delete_premium_option" aria-describedby="subdotclub_delete_premium_option_description" <?php disabled( $is_editing ); ?>>
 				<option value="delete" <?php selected( $delete_option_value, 'delete' ); ?>><?php esc_html_e( 'Delete premium', 'sub-club' ); ?></option>
 				<option value="keep" <?php selected( $delete_option_value, 'keep' ); ?>><?php esc_html_e( 'Keep premium', 'sub-club' ); ?></option>
 			</select>
